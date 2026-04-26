@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <title>Placement Test</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="placementTest/style.css" />
+    <link rel="stylesheet" href="common/site.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Voilà</a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="nav-home">Home</a>
+                <a href="about.html" class="nav-about">About</a>
+                <a href="classes.html" class="nav-classes">Classes</a>
+                <a href="placementTest.html" class="nav-placement">Placement Test</a>
+                <a href="sampleClasses.html" class="nav-sample">Sample Class</a>
+                <a href="contact.html" class="nav-contact">Contact</a>
+            </nav>
+
+            <div class="nav-right">
+                <a href="register.html" class="nav-register-btn">Register</a>
+                <div class="language-switcher">
+                    <button class="lang-toggle" aria-label="Change language">
+                        <img src="icons/earth-globe.png" alt="Language">
+                    </button>
+
+                    <div class="lang-dropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="fa">فارسی</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="placement-hero">
+            <div class="container hero-inner">
+                <span class="eyebrow light reveal placement-eyebrow">Assessment</span>
+                <h1 class="reveal placement-title">Placement <span class="accent-italic">Test</span></h1>
+                <p class="hero-text reveal placement-subtitle">
+                    Find your perfect starting point. Our placement test helps us recommend the right class for you.
+                </p>
+            </div>
+        </section>
+
+        <section class="section placement-section">
+            <div class="container center-heading reveal">
+                <span class="eyebrow process-eyebrow">Process</span>
+                <h2 class="process-title">How It <span class="accent-italic">Works</span></h2>
+            </div>
+
+            <div class="container steps-grid">
+                <article class="step-card reveal-up" style="transition-delay: 0s;">
+                    <div class="step-icon">
+                        <img src="icons/clip-board.png" alt="form">
+                    </div>
+                    <span class="step-label step-1-label">Step 1</span>
+                    <h3 class="step-1-title">Submit Request</h3>
+                    <p class="step-1-text">
+                        Fill out the form below with your details and preferred language.
+                    </p>
+                </article>
+
+                <article class="step-card reveal-up" style="transition-delay: 0.08s;">
+                    <div class="step-icon">
+                        <img src="icons/message.png" alt="chat">
+                    </div>
+                    <span class="step-label step-2-label">Step 2</span>
+                    <h3 class="step-2-title">Take the Test</h3>
+                    <p class="step-2-text">
+                        Complete a short written or oral assessment so we can place you accurately.
+                    </p>
+                </article>
+
+                <article class="step-card reveal-up" style="transition-delay: 0.16s;">
+                    <div class="step-icon">
+                        <img src="icons/bar-graph.png" alt="check">
+                    </div>
+                    <span class="step-label step-3-label">Step 3</span>
+                    <h3 class="step-3-title">Get Your Level</h3>
+                    <p class="step-3-text">
+                        We’ll recommend the most suitable class and next step for your learning journey.
+                    </p>
+                </article>
+            </div>
+
+            <div class="container form-wrap reveal-up">
+                <div class="placement-form-box">
+                    <div class="form-heading">
+                        <h2 class="form-title">Request Your Test</h2>
+                        <p class="form-subtitle">
+                            Fill in your details and we’ll arrange your placement assessment.
+                        </p>
+                    </div>
+
+                    <form class="placement-form" id="placementForm" action="https://formspree.io/f/xwvarrvd" method="POST">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="fullName" class="label-name">Full Name *</label>
+                                <input type="text" id="fullName" name="Full Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="label-email">Email *</label>
+                                <input type="email" id="email" name="Email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="label-phone">Phone</label>
+                                <input type="text" id="phone" name="Phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="language" class="label-language">Language *</label>
+                                <select id="language" name="Language" required>
+                <option value="" class="option-select-language">Select language</option>
+                <option value="french">French</option>
+            </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="level" class="label-level">Current Level</label>
+                                <select id="level" name="Current Level">
+                <option value="" class="option-self-assessment">Self-assessment</option>
+                <option value="a1">A1</option>
+                <option value="a2">A2</option>
+                <option value="b1">B1</option>
+                <option value="b2">B2</option>
+                <option value="TEF/TCF">Exam Preparation</option>
+            </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date" class="label-date">Preferred Date</label>
+                                <input type="date" id="date" name="Preferred Date">
+                            </div>
+                            <div class="form-group">
+                                <label for="timeSlot" class="label-time">Preferred Time Slot</label>
+                                <select id="timeSlot" name="Preferred Time Slot">
+                                    <option value="" class="option-select-time">Select a time range</option>
+                                    <option value="morning">Morning (9 AM - 12 PM)</option>
+                                    <option value="afternoon">Afternoon (12 PM - 5 PM)</option>
+                                    <option value="evening">Evening (5 PM - 9 PM)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="notes" class="label-notes">Additional Notes</label>
+                                <textarea id="notes" name="Notes" rows="5" class="notes-placeholder" placeholder="Any specific goals or concerns..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn form-submit-btn">Submit Request</button>
+                        <p class="form-message" id="formMessage"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer" id="contact">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="footer-logo">Voilà <span>Language Studio</span></a>
+                <p class="footer-desc">
+                    Excellence in language education. We believe in the transformative power of learning.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="footer-quick-title">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html" class="footer-main-link">Main</a></li>
+                    <li><a href="about.html" class="footer-about-link">About Us</a></li>
+                    <li><a href="classes.html" class="footer-classes-link">Classes</a></li>
+                    <li><a href="placementTest.html" class="footer-placement-link">Placement Test</a></li>
+                    <li><a href="sampleClasses.html" class="footer-sample-link">Sample Class</a></li>
+                    <li><a href="contact.html" class="footer-contact-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-levels-title">Levels</h4>
+                <ul>
+                    <li>A1</li>
+                    <li>A2</li>
+                    <li>B1</li>
+                    <li class="footer-exam-text">Exam Preparation</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-contact-title">Contact</h4>
+                <ul>
+                    <li class="footer-address">Mel Lastman Sq., North York, Toronto</li>
+                    <li>+1 (647) 641-5767</li>
+                    <li>voila.fr.en@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="footer-copy">© 2026 Voilà Language Studio. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+                <a href="terms.html" class="terms-link">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="placementTest/script.js"></script>
+</body>
+
+</html>

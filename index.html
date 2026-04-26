@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <title>Voilà Language</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main/style.css" />
+    <link rel="stylesheet" href="common/site.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Voilà</a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="nav-home">Home</a>
+                <a href="about.html" class="nav-about">About</a>
+                <a href="classes.html" class="nav-classes">Classes</a>
+                <a href="placementTest.html" class="nav-placement">Placement Test</a>
+                <a href="sampleClasses.html" class="nav-sample">Sample Class</a>
+                <a href="contact.html" class="nav-contact">Contact</a>
+            </nav>
+
+            <div class="nav-right">
+                <a href="register.html" class="nav-register-btn">Register</a>
+                <div class="language-switcher">
+                    <button class="lang-toggle" aria-label="Change language">
+                        <img src="icons/earth-globe.png" alt="Language">
+                    </button>
+
+                    <div class="lang-dropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="fa">فارسی</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero reveal">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1 class="hero-title reveal">
+                        From Zero to Fluent in <span class="accent-italic">French</span>
+                    </h1>
+
+                    <div class="btn-row">
+                        <a href="classes.html" class="btn btn-primary hero-btn-1">Explore Classes</a>
+                        <a href="placementTest.html" class="btn btn-secondary hero-btn-2">Take Placement Test</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container about-grid">
+                <div class="about-copy reveal-left">
+                    <span class="eyebrow about-eyebrow">Who We Are</span>
+                    <h2 class="about-title">
+                        Not just a language class,
+                        <span class="accent-italic">a complete experience</span>
+                    </h2>
+                    <p class="about-text">
+                        Our programs are designed to help you succeed in French exams and move forward with your immigration goals. With small classes (maximum 10 students), expert instructors, and continuous support, you’ll build real confidence in speaking and understanding
+                        French. And the best part? High-quality learning, at a price that makes sense.
+                    </p>
+                </div>
+
+                <div class="stats-grid reveal-right">
+                    <article class="stat-card">
+                        <strong class="stat-number stat-1-number">+6</strong>
+                        <span class="stat-label stat-1-label">Years of Excellence</span>
+                    </article>
+                    <article class="stat-card">
+                        <strong class="stat-number stat-2-number">200+</strong>
+                        <span class="stat-label stat-2-label">Students</span>
+                    </article>
+                    <article class="stat-card">
+                        <strong class="stat-number stat-3-number">+10</strong>
+                        <span class="stat-label stat-3-label">Different Schedules</span>
+                    </article>
+                    <article class="stat-card">
+                        <strong class="stat-number stat-4-number">98%</strong>
+                        <span class="stat-label stat-4-label">Student Satisfaction</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section features-section" id="styles">
+            <div class="container center-heading">
+                <span class="eyebrow features-eyebrow">Our Advantages</span>
+                <h2 class="features-title">Why Choose <span class="accent-italic">Voilà</span></h2>
+            </div>
+
+            <div class="container features-grid">
+                <article class="feature-card reveal-up" style="transition-delay: 0s;">
+                    <div class="feature-icon">
+                        <img src="icons/people.png" alt="people">
+                    </div>
+                    <h3 class="feature-1-title">Small Class Sizes</h3>
+                    <p class="feature-1-text">Maximum 10 students per class means personalized attention and stronger progress.</p>
+                </article>
+
+                <article class="feature-card reveal-up" style="transition-delay: 0.08s;">
+                    <div class="feature-icon">
+                        <img src="icons/book.png" alt="Book">
+                    </div>
+                    <h3 class="feature-2-title">Proven Methodology</h3>
+                    <p class="feature-2-text">Our curriculum blends communication, structure, and fluency-building practice.</p>
+                </article>
+
+                <article class="feature-card reveal-up" style="transition-delay: 0.16s;">
+                    <div class="feature-icon">
+                        <img src="icons/medal.png" alt="Medal" />
+                    </div>
+                    <h3 class="feature-3-title">Certified Instructors</h3>
+                    <p class="feature-3-text">Every instructor is experienced, supportive, and committed to meaningful outcomes.</p>
+                </article>
+
+                <article class="feature-card reveal-up" style="transition-delay: 0.24s;">
+                    <div class="feature-icon">
+                        <img src="icons/earth-globe.png" alt="earth-globe" />
+                    </div>
+                    <h3 class="feature-4-title">Flexible Learning</h3>
+                    <p class="feature-4-text">Choose online or in-person classes — group or private — designed to fit your schedule and learning style.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section classes-section" id="classes">
+            <div class="container section-top-row">
+                <div class="reveal-left">
+                    <span class="eyebrow classes-eyebrow">Popular Now</span>
+                    <h2 class="classes-title">Featured <span class="accent-italic">Classes</span></h2>
+                </div>
+
+                <a href="classes.html" class="view-all-link reveal-right classes-link">View All Classes →</a>
+            </div>
+
+            <div class="container classes-grid">
+                <article class="class-card reveal-up" style="transition-delay: 0s;">
+                    <div class="class-top">
+                        <span class="class-price">$110</span>
+                    </div>
+                    <h3 class="class-1-title">A1 | Beginner</h3>
+                    <p class="class-1-text">Start from zero and build your foundation in French. Learn basic vocabulary, simple sentences, and everyday communication.</p>
+                    <div class="class-meta">
+                        <span class="class-1-meta-1">12 Weeks</span>
+                        <span class="class-1-meta-2">Beginner</span>
+                        <span class="class-1-meta-3">In-Person | Online</span>
+
+                    </div>
+                    <a href="classes.html?level=a1" class="enroll-link">Enroll →</a>
+                </article>
+
+                <article class="class-card reveal-up" style="transition-delay: 0.08s;">
+                    <div class="class-top">
+                        <span class="class-price">$110</span>
+                    </div>
+                    <h3 class="class-2-title">A2 | Elementary</h3>
+                    <p class="class-2-text">Strengthen your basics and start expressing yourself more confidently. Understand common conversations and speak in simple situations.</p>
+                    <div class="class-meta">
+                        <span class="class-2-meta-1">12 Weeks</span>
+                        <span class="class-2-meta-2">Elementary</span>
+                        <span class="class-2-meta-3">In-Person | Online</span>
+
+                    </div>
+                    <a href="classes.html?level=a2" class="enroll-link">Enroll →</a>
+                </article>
+
+                <article class="class-card reveal-up" style="transition-delay: 0.16s;">
+                    <div class="class-top">
+                        <span class="class-price">$120</span>
+                    </div>
+                    <h3 class="class-3-title">B1 | Intermediate</h3>
+                    <p class="class-3-text">Develop fluency and handle real-life conversations with ease. Improve grammar, expand vocabulary, and speak more naturally.</p>
+                    <div class="class-meta">
+                        <span class="class-3-meta-1">9 Weeks</span>
+                        <span class="class-3-meta-2">Intermediate</span>
+                        <span class="class-3-meta-3">In-Person | Online</span>
+
+                    </div>
+                    <a href="classes.html?level=b1" class="enroll-link">Enroll →</a>
+                </article>
+
+                <article class="class-card reveal-up" style="transition-delay: 0.24s;">
+                    <div class="class-top">
+                        <span class="class-price">$135</span>
+                    </div>
+                    <h3 class="class-4-title">Exam Preparation (TEF/TCF)</h3>
+                    <p class="class-4-text">Get fully prepared for French exams and boost your PR chances. Focused practice, strategies, and real exam simulations.</p>
+                    <div class="class-meta">
+                        <span class="class-4-meta-1">5 Weeks</span>
+                        <span class="class-4-meta-2">Upper-Intermediate</span>
+                        <span class="class-4-meta-3">In-Person | Online</span>
+
+                    </div>
+                    <a href="classes.html?level=TEF/TCF" class="enroll-link">Enroll →</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section testimonials-section">
+            <div class="container center-heading light-center-heading">
+                <span class="eyebrow light testimonials-eyebrow">Testimonials</span>
+                <h2 class="light-title testimonials-title">What Students Say</h2>
+            </div>
+
+            <div class="container testimonial-slider-wrapper">
+                <button class="slider-btn prev-btn" aria-label="Previous testimonial">&#10094;</button>
+
+                <div class="testimonial-slider">
+                    <div class="testimonial-track">
+                        <article class="testimonial-card">
+                            <p class="testimonial-1-text">“The conversation practice is incredibly helpful. It makes learning feel natural and engaging.”</p>
+                            <h4 class="testimonial-1-name">Sara</h4>
+                            <span class="testimonial-1-meta">A1 | Online</span>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <p class="testimonial-2-text">“The classes are practical, interactive, and completely stress-free. I actually enjoy learning French.”</p>
+                            <h4 class="testimonial-2-name">Alireza</h4>
+                            <span class="testimonial-2-meta">B1 | Online</span>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <p class="testimonial-3-text">“Being able to speak in class, participate in activities, and get immediate feedback on pronunciation and grammar is extremely valuable.”</p>
+                            <h4 class="testimonial-3-name">Maryam</h4>
+                            <span class="testimonial-3-meta">A2 | In-Person</span>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <p class="testimonial-4-text">“The classes are very interactive — everyone participates, and it never feels like a one-sided lecture.”</p>
+                            <h4 class="testimonial-4-name">Nazanin</h4>
+                            <span class="testimonial-4-meta">Exam Preparation</span>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <p class="testimonial-5-text">“The teacher explains key points clearly and always encourages us to speak and participate.”</p>
+                            <h4 class="testimonial-5-name">Amir</h4>
+                            <span class="testimonial-5-meta">A1 | In-Person</span>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <p class="testimonial-6-text">“The instructor is patient, supportive, and highly organized. You can really feel the progress.”</p>
+                            <h4 class="testimonial-6-name">Parisa</h4>
+                            <span class="testimonial-6-meta">A2 | Online</span>
+                        </article>
+                    </div>
+                </div>
+
+                <button class="slider-btn next-btn" aria-label="Next testimonial">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="section faq-section" id="placement">
+            <div class="container faq-wrap">
+                <div class="center-heading">
+                    <span class="eyebrow faq-eyebrow">FAQ</span>
+                    <h2 class="faq-title">Common <span class="accent-italic">Questions</span></h2>
+                </div>
+
+                <div class="faq-list">
+                    <details>
+                        <summary class="faq-1-q">How do I know which level is right for me?</summary>
+                        <p class="faq-1-a">We recommend taking our placement test before registering so we can match you with the right class.</p>
+                    </details>
+
+                    <details>
+                        <summary class="faq-2-q">What is the class size?</summary>
+                        <p class="faq-2-a">Most small-group classes are capped at 10 students to preserve quality and interaction.</p>
+                    </details>
+
+                    <details>
+                        <summary class="faq-3-q">Can I switch between online and in-person classes?</summary>
+                        <p class="faq-3-a">Yes. Depending on availability, we can usually place you in a format that suits your schedule.</p>
+                    </details>
+
+                    <details>
+                        <summary class="faq-4-q">What can you tell me about your instructors and teaching experience?</summary>
+                        <p class="faq-4-a">Our instructors have several years of experience teaching French in both Iran and Canada. They hold advanced certifications and focus on practical teaching to help you speak with confidence.</p>
+                    </details>
+
+                    <details>
+                        <summary class="faq-5-q">How long does it take to reach B2 from zero?</summary>
+                        <p class="faq-5-a">With consistent study around 2 hours per day, you should expect at least one year to reach a B2 level.</p>
+                    </details>
+
+                    <details>
+                        <summary class="faq-6-q">Can I get a refund if I need to cancel?</summary>
+                        <p class="faq-6-a">Refund policies depend on the class type and the time of cancellation.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section">
+            <div class="container cta-box">
+                <h2 class="cta-title">Start Your French <span class="accent-italic">Journey Today</span></h2>
+                <p class="cta-text">
+                    Take the first step toward fluency. Whether you are a complete beginner or refining advanced skills, there is a class for you.
+                </p>
+                <div class="btn-row center-btns">
+                    <a href="register.html" class="btn btn-dark cta-btn-1">Register Now</a>
+                    <a href="sampleClasses.html" class="btn btn-outline-dark cta-btn-2">Try a Free Class</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer" id="contact">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="footer-logo">Voilà <span>Language Studio</span></a>
+                <p class="footer-desc">
+                    Excellence in language education. We believe in the transformative power of learning.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="footer-quick-title">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html" class="footer-main-link">Main</a></li>
+                    <li><a href="about.html" class="footer-about-link">About Us</a></li>
+                    <li><a href="classes.html" class="footer-classes-link">Classes</a></li>
+                    <li><a href="placementTest.html" class="footer-placement-link">Placement Test</a></li>
+                    <li><a href="sampleClasses.html" class="footer-sample-link">Sample Class</a></li>
+                    <li><a href="contact.html" class="footer-contact-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-levels-title">Levels</h4>
+                <ul>
+                    <li>A1</li>
+                    <li>A2</li>
+                    <li>B1</li>
+                    <li class="footer-exam-text">Exam Preparation</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-contact-title">Contact</h4>
+                <ul>
+                    <li class="footer-address">Mel Lastman Sq., North York, Toronto</li>
+                    <li>+1 (647) 641-5767</li>
+                    <li>voila.fr.en@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="footer-copy">© 2026 Voilà Language Studio. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+                <a href="terms.html" class="terms-link">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main/script.js"></script>
+</body>
+
+</html>

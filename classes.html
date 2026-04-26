@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <title>Classes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="classes/style.css" />
+    <link rel="stylesheet" href="common/site.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Voilà</a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="nav-home">Home</a>
+                <a href="about.html" class="nav-about">About</a>
+                <a href="classes.html" class="nav-classes">Classes</a>
+                <a href="placementTest.html" class="nav-placement">Placement Test</a>
+                <a href="sampleClasses.html" class="nav-sample">Sample Class</a>
+                <a href="contact.html" class="nav-contact">Contact</a>
+            </nav>
+
+            <div class="nav-right">
+                <a href="register.html" class="nav-register-btn">Register</a>
+                <div class="language-switcher">
+                    <button class="lang-toggle" aria-label="Change language">
+                        <img src="icons/earth-globe.png" alt="Language">
+                    </button>
+
+                    <div class="lang-dropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="fa">فارسی</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="classes-hero">
+            <div class="container hero-inner">
+                <span class="eyebrow light reveal-up">Our Programs</span>
+                <h1 class="reveal-up">French <span class="accent-italic">Classes</span></h1>
+                <p class="hero-text reveal-up">
+                    Explore our French programs designed for every stage of your learning journey.
+                </p>
+            </div>
+        </section>
+
+        <section class="section classes-page-section">
+            <div class="container">
+
+                <div class="filters reveal-up">
+                    <div class="filter-group">
+                        <span>Language:</span>
+                        <button class="filter-btn active" data-filter-type="language" data-filter="french">French</button>
+                    </div>
+
+                    <div class="filter-group">
+                        <span>Level:</span>
+                        <button class="filter-btn active" data-filter-type="level" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter-type="level" data-filter="a1">A1</button>
+                        <button class="filter-btn" data-filter-type="level" data-filter="a2">A2</button>
+                        <button class="filter-btn" data-filter-type="level" data-filter="b1">B1</button>
+                        <button class="filter-btn" data-filter-type="level" data-filter="exam">Exam</button>
+                    </div>
+                </div>
+
+                <!-- Dynamic target -->
+                <div class="classes-grid" id="classesGrid"></div>
+
+                <!-- Fallback if JS fails -->
+                <div class="classes-grid fallback" id="fallbackGrid">
+                    <article class="course-card" data-language="french" data-level="a1">
+                        <div class="course-body">
+                            <h3>A1 | Beginner</h3>
+                            <p>Static fallback card</p>
+                        </div>
+                    </article>
+                </div>
+
+                <noscript>
+                    <p>JavaScript is disabled. Showing basic content.</p>
+                </noscript>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="site-footer" id="contact">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="footer-logo">Voilà <span>Language Studio</span></a>
+                <p class="footer-desc">
+                    Excellence in language education. We believe in the transformative power of learning.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="footer-quick-title">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html" class="footer-main-link">Main</a></li>
+                    <li><a href="about.html" class="footer-about-link">About Us</a></li>
+                    <li><a href="classes.html" class="footer-classes-link">Classes</a></li>
+                    <li><a href="placementTest.html" class="footer-placement-link">Placement Test</a></li>
+                    <li><a href="sampleClasses.html" class="footer-sample-link">Sample Class</a></li>
+                    <li><a href="contact.html" class="footer-contact-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-levels-title">Levels</h4>
+                <ul>
+                    <li>A1</li>
+                    <li>A2</li>
+                    <li>B1</li>
+                    <li class="footer-exam-text">Exam Preparation</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-contact-title">Contact</h4>
+                <ul>
+                    <li class="footer-address">Mel Lastman Sq., North York, Toronto</li>
+                    <li>+1 (647) 641-5767</li>
+                    <li>voila.fr.en@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="footer-copy">© 2026 Voilà Language Studio. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+                <a href="terms.html" class="terms-link">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data/cources.js"></script>
+    <script src="classes/script.js"></script>
+</body>
+
+</html>

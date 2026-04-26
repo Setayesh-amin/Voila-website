@@ -1,0 +1,187 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <title>Registration</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="register/style.css" />
+    <link rel="stylesheet" href="common/site.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Voilà</a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="nav-home">Home</a>
+                <a href="about.html" class="nav-about">About</a>
+                <a href="classes.html" class="nav-classes">Classes</a>
+                <a href="placementTest.html" class="nav-placement">Placement Test</a>
+                <a href="sampleClasses.html" class="nav-sample">Sample Class</a>
+                <a href="contact.html" class="nav-contact">Contact</a>
+            </nav>
+
+            <div class="nav-right">
+                <a href="register.html" class="nav-register-btn">Register</a>
+                <div class="language-switcher">
+                    <button class="lang-toggle" aria-label="Change language">
+                        <img src="icons/earth-globe.png" alt="Language">
+                    </button>
+
+                    <div class="lang-dropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="fa">فارسی</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        <main>
+            <section class="register-hero">
+                <div class="container hero-inner">
+                    <span class="eyebrow light reveal register-eyebrow">Enrollment</span>
+                    <h1 class="reveal register-title">Register <span class="accent-italic">Now</span></h1>
+                    <p class="hero-text reveal register-subtitle">
+                        Secure your spot in one of our language programs. Complete the form below to begin your enrollment.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section register-section">
+                <div class="container register-grid">
+                    <div class="register-form-wrap reveal-left">
+                        <div class="register-form-box">
+                            <div class="form-heading">
+                                <h2 class="form-title">Enrollment Form</h2>
+                                <p class="form-subtitle">Fill in your details to register for a course.</p>
+                            </div>
+
+                            <form id="registrationForm" class="register-form">
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="fullName" class="label-name">Full Name *</label>
+                                        <input type="text" id="fullName" name="fullName" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email" class="label-email">Email *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="phone" class="label-phone">Phone</label>
+                                        <input type="text" id="phone" name="phone">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="course" class="label-course">Select Course *</label>
+                                        <select id="course" name="course" required>
+                  </select>
+                                    </div>
+
+                                    <div class="form-group full-width class-option-group hidden-group" id="classOptionGroup">
+                                        <label for="classOption" class="label-class-option">Available Class *</label>
+                                        <select id="classOption" name="classOption">
+                    <option value="" class="option-select-class">Choose a class option</option>
+                  </select>
+                                    </div>
+
+                                    <div class="form-group full-width">
+                                        <label for="notes" class="label-notes">Notes</label>
+                                        <textarea id="notes" name="notes" rows="5" placeholder="Any special requests or questions..."></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="submit-btn form-submit-btn">
+                                    Complete Registration
+                                </button>
+                                <p class="form-message" id="formMessage"></p>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="register-summary-wrap reveal-right">
+                        <div class="summary-box">
+                            <h3 class="summary-title">Course Summary</h3>
+                            <p class="summary-default" id="summaryDefault">Select a course to see the summary.</p>
+
+                            <div class="summary-content" id="summaryContent">
+                                <h4 id="summaryCourseTitle"></h4>
+                                <p id="summaryCourseText"></p>
+
+                                <div class="summary-meta">
+                                    <span id="summaryDuration"></span>
+                                    <span id="summaryLevel"></span>
+                                    <span id="summaryFormat"></span>
+                                    <span id="summarySchedule"></span>
+                                    <span id="summaryPrice"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <footer class="site-footer" id="contact">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="footer-logo">Voilà <span>Language Studio</span></a>
+                <p class="footer-desc">
+                    Excellence in language education. We believe in the transformative power of learning.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="footer-quick-title">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html" class="footer-main-link">Main</a></li>
+                    <li><a href="about.html" class="footer-about-link">About Us</a></li>
+                    <li><a href="classes.html" class="footer-classes-link">Classes</a></li>
+                    <li><a href="placementTest.html" class="footer-placement-link">Placement Test</a></li>
+                    <li><a href="sampleClasses.html" class="footer-sample-link">Sample Class</a></li>
+                    <li><a href="contact.html" class="footer-contact-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-levels-title">Levels</h4>
+                <ul>
+                    <li>A1</li>
+                    <li>A2</li>
+                    <li>B1</li>
+                    <li class="footer-exam-text">Exam Preparation</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-contact-title">Contact</h4>
+                <ul>
+                    <li class="footer-address">Mel Lastman Sq., North York, Toronto</li>
+                    <li>+1 (647) 641-5767</li>
+                    <li>voila.fr.en@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="footer-copy">© 2026 Voilà Language Studio. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+                <a href="terms.html" class="terms-link">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+        <script src="./data/cources.js"></script>
+        <script src="register/script.js"></script>
+</body>
+
+</html>
